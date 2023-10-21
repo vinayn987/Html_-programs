@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <style>
+        h1{
+            color: brown;
+        }
+        #myCanvas{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Canvas Line</h1>
+    <canvas id="myCanvas" width="600" height="500"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        ctx.beginPath();
+        ctx.moveTo(200, 20);
+        ctx.lineTo(70, 200);
+        ctx.lineTo(300, 200);
+        ctx.closePath();
+        ctx.fillStyle='green';
+        ctx.strokeStyle='blue';
+        ctx.lineWidth=3;
+        ctx.fill();
+        ctx.stroke();
+        
+    </script>
+</body>
+</html>
