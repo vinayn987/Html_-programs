@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Anime</title>
+    <style>
+        .box{
+            width:100px;
+            height: 100px;
+            background-color: crimson;
+            position: relative;
+            animation-name: move;
+            animation-duration: 4s;
+            animation-delay:1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes move{
+            0%{
+                left:0;
+                background-color: darkred;
+            }
+            50%{
+                left:400px;
+                transform: rotate(180deg);
+                background-color: rgb(41, 7, 133);
+            }
+            100%{
+                left:0;
+                background-color: hotpink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <div class="box"></div>
+</body>
+</html>
