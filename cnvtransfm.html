@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style>
+        #myCanvas{
+           
+            border:1px solid black;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        ctx.translate(100, 100);
+        ctx.fillStyle='red';
+        ctx.fillRect(0, 0, 50, 30);
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+
+        ctx.translate(300, 100);
+        ctx.rotate(Math.PI/2);
+        ctx.fillStyle='green';
+        ctx.fillRect(0, 0, 50, 30);
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+
+        ctx.translate(100, 300);
+        ctx.scale(2, .5);
+        ctx.fillStyle='blue';
+        ctx.fillRect(0, 0, 50, 50);
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        
+        ctx.translate(250, 300);
+        ctx.transform(1, .5, 0.5, 1, 0, 0);
+        ctx.fillStyle='orange';
+        ctx.fillRect(0, 0, 50, 50);
+    </script>
+</body>
+</html>
