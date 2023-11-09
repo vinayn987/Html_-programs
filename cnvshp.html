@@ -24,10 +24,16 @@
         ctx.strokeStyle='blue';
         ctx.stroke();
 
+        
+        const grd1=ctx.createRadialGradient(190, 70, 40, 210, 80, 10);
+        grd1.addColorStop(0, 'aqua');
+        grd1.addColorStop(0.5, 'lightgreen')
+        grd1.addColorStop(1, 'blue');
+
         ctx.beginPath();
-        ctx.fillStyle='violet';
-        ctx.strokeStyle='yellow';
-        ctx.arc(180, 65, 25, 0, Math.PI*2);
+        ctx.fillStyle=grd1;
+        ctx.strokeStyle='red';
+        ctx.arc(210, 75, 25, 0, Math.PI*2);
         ctx.stroke();
         ctx.fill();
 
@@ -36,9 +42,9 @@
         ctx.fillText("Hello World", 150, 30);
 
         const grd=ctx.createLinearGradient(0, 50, 50, 0);
-        grd.addColorStop(0, 'red');
-        grd.addColorStop(.5, 'blue');
-        grd.addColorStop(1, 'green');
+        grd.addColorStop(0, 'blue');
+        grd.addColorStop(.5, 'aqua');
+        grd.addColorStop(1, 'yellow');
         ctx.fillStyle=grd;
         ctx.fillRect(10, 10, 80, 30);
     </script>
