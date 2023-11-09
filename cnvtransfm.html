@@ -19,26 +19,26 @@
         const ctx = canvas.getContext('2d');
 
         ctx.translate(100, 100);
-        ctx.fillStyle='red';
-        ctx.fillRect(0, 0, 50, 30);
+        ctx.fillStyle='yellow';
+        ctx.fillRect(0, 0, 100, 60);
         ctx.setTransform(1, 0, 0, 1, 0, 0);
 
-        ctx.translate(300, 100);
+        ctx.translate(330, 100);
         ctx.rotate(Math.PI/2);
-        ctx.fillStyle='green';
-        ctx.fillRect(0, 0, 50, 30);
+        ctx.fillStyle='brown';
+        ctx.fillRect(0, 0, 100, 50);
         ctx.setTransform(1, 0, 0, 1, 0, 0);
 
-        ctx.translate(100, 300);
+        ctx.translate(100, 270);
         ctx.scale(2, .5);
-        ctx.fillStyle='blue';
-        ctx.fillRect(0, 0, 50, 50);
+        ctx.fillStyle='lightblue';
+        ctx.fillRect(0, 0, 50, 100);
         ctx.setTransform(1, 0, 0, 1, 0, 0);
         
-        ctx.translate(250, 300);
+        ctx.translate(250, 250);
         ctx.transform(1, .5, 0.5, 1, 0, 0);
-        ctx.fillStyle='orange';
-        ctx.fillRect(0, 0, 50, 50);
+        ctx.fillStyle='lightgreen';
+        ctx.fillRect(0, 0, 70, 60);
     </script>
 </body>
 </html>
