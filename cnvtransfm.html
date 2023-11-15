@@ -8,7 +8,7 @@
         #myCanvas{
            
             border:1px solid black;
-            background-color: cornflowerblue;
+            background-color:white;
         }
     </style>
 </head>
@@ -23,20 +23,20 @@
         ctx.fillRect(0, 0, 100, 60);
         ctx.setTransform(1, 0, 0, 1, 0, 0);
 
-        ctx.translate(330, 100);
+        ctx.translate(300, 100);
         ctx.rotate(Math.PI/2);
         ctx.fillStyle='brown';
         ctx.fillRect(0, 0, 100, 50);
         ctx.setTransform(1, 0, 0, 1, 0, 0);
 
-        ctx.translate(100, 270);
+        ctx.translate(100, 300);
         ctx.scale(2, .5);
         ctx.fillStyle='lightblue';
         ctx.fillRect(0, 0, 50, 100);
         ctx.setTransform(1, 0, 0, 1, 0, 0);
         
         ctx.translate(250, 250);
-        ctx.transform(1, .5, 0.5, 1, 0, 0);
+        ctx.transform(1, 0.5, 0.5, 1, 0, 0);
         ctx.fillStyle='lightgreen';
         ctx.fillRect(0, 0, 70, 60);
     </script>
