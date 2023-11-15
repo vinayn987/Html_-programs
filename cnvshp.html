@@ -8,7 +8,7 @@
         #myCanvas{
             width: 500px;
             height:500px;
-            background-color: burlywood;
+            background-color:white;
             border:1px solid black;
         }
     </style>
@@ -24,15 +24,11 @@
         ctx.strokeStyle='blue';
         ctx.stroke();
 
-        
-        const grd1=ctx.createRadialGradient(190, 70, 40, 210, 80, 10);
-        grd1.addColorStop(0, 'aqua');
-        grd1.addColorStop(0.5, 'lightgreen')
-        grd1.addColorStop(1, 'blue');
+       
 
         ctx.beginPath();
-        ctx.fillStyle=grd1;
-        ctx.strokeStyle='red';
+        ctx.fillStyle="red";
+        ctx.strokeStyle='yellow';
         ctx.arc(210, 75, 25, 0, Math.PI*2);
         ctx.stroke();
         ctx.fill();
